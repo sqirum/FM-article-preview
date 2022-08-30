@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+main {
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+    max-width: 327px;
+}
+
+.card-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+.text {
+    padding: 30px;
+}
+
+
+h4 {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: #48556A;
+}
+
+p {
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.12px;
+    color: #6E8098;
+}
+
+.author {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author .writer {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.author .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author .info h5 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    color: #48556A;
+}
+
+.author .info p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+}
+
+.author .share-icon {
+    background-color: #ECF2F8;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    align-self: center;
+    cursor: pointer;
+}
+
+
+.social-media {
+    background-color: #48556A;
+    display: flex;
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.social-media h6 {
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 13px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9DAEC2;
+}
+
+.social-icons img:nth-child(2){
+    margin: 0 16px;
+}
+
+.social-media .share-icon {
+    background-color: #6E8098;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    cursor: pointer;
+    margin: 4px 0;
+}
+
+@media only screen and (min-width: 998px) {
+    body {
+      background-color: lightblue;
+    }
+}
