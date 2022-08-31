@@ -40,6 +40,7 @@ h4 {
     font-weight: 700;
     letter-spacing: 0.2px;
     color: #48556A;
+    margin-bottom: 12px;
 }
 
 p {
@@ -128,8 +129,99 @@ p {
     margin: 4px 0;
 }
 
+#share-icon-dark-desktop {
+    display: none;
+}
+
+.tooltip-social-media {
+    display: none;
+}
+
+.tooltip {
+    display: none;
+}
+
 @media only screen and (min-width: 998px) {
-    body {
-      background-color: lightblue;
+    main {
+        flex-direction: row;
+        max-width: 730px;
+        box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
     }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-header {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        width: 40%;
+    }
+
+    .author {
+        justify-content: start;
+        align-items: center;
+    }
+
+    .author .info {
+        margin-left: 16px;
+    }
+
+    .author > div {
+        margin-left: auto;
+    }
+
+    #share-icon-dark-mobile {
+        display: none;
+    }
+
+    #share-icon-dark-desktop {
+        display: block;
+    }
+
+    #share-icon-dark-desktop:hover + .tooltip-social-media  {
+        display: flex;
+    }
+
+    .tooltip {
+        position: relative;
+        display: block;
+    }
+
+    .tooltip-social-media {
+        position: absolute;
+        top: calc(-100% - 35px);
+        transform: translateX(calc(-50% + 10px));
+        display: flex;
+        padding: 15px 35px;
+        background-color: #48556A;
+        border-radius: 10px;
+        display: none;
+    }
+    .tooltip-social-media .social-icons {
+        display: flex;
+    }
+
+    .tooltip-social-media h6 {
+        font-weight: 500;
+        line-height: 20px;
+        font-size: 13px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #9DAEC2;
+        margin-right: 20px;
+    }
+
+    .tooltip-social-media::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #48556A transparent transparent transparent;
+      }
 }
